@@ -1,0 +1,51 @@
+$red: #ff0000
+$green: #00ff00
+$yellow: #ffff00
+
+
+.light 
+    height: 100px
+    width: 100px
+    border-radius: 150px
+    &.red:hover
+        box-shadow: 0 0 0 50px lighten($red, 25%);
+        transition: .5s ease;
+        -moz-box-shadow: 0 0 50px red; 
+        -webkit-box-shadow: 0 0 50px red; 
+    &.green:hover
+        background: lighten($green, 75%)
+
+.red
+    background: $red
+    position: absolute;
+    left: 45px;
+    margin-top: 18px
+
+.green
+    background: $green
+    position: absolute
+    left: 45px
+    margin-top: 75px
+
+.yellow
+  background: $yellow
+  position: absolute
+  left: 45px
+  margin-top: 140px
+
+
+.main-stoplight
+    background: black
+    width: 200px
+    height: 385px
+    position: absolute;
+    left: 190px;
+    margin-top: 100px
+
+.post
+    background: black
+    margin-top: -10px
+    width: 75px
+    height: 110px
+    position: absolute
+    left: 250px
